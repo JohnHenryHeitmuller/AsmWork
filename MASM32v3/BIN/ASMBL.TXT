@@ -1,0 +1,10 @@
+ Assembling: G:\MASM32\ICZ\L2INC.asm
+
+ Volume in drive G is PHOTO_WORLD
+ Volume Serial Number is 3D2E-15EA
+ Directory of G:\MASM32\ICZ
+
+L2INC    ASM         7,322  01-25-99  1:09a L2INC.ASM
+L2INC    OBJ         2,872  01-25-99  1:09a L2INC.obj
+         2 file(s)         10,194 bytes
+         0 dir(s)     271,532,032 bytes free

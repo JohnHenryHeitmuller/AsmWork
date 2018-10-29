@@ -1,0 +1,14 @@
+//these (arbitrary) equates could have been in an include file...
+#define IDM_QUIT	100
+#define IDM_ABOUT	101
+
+ICON_1 ICON GOOFEE.ico
+
+W32DEMO	  MENU
+    BEGIN
+      POPUP "File"
+        BEGIN
+             MENUITEM "Quit",  IDM_QUIT
+             MENUITEM "About...",  IDM_ABOUT
+        END
+    END

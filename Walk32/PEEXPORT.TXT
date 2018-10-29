@@ -1,0 +1,103 @@
+
+________________________________________________________________
+
+                          PEexport.ASM
+                 PE Export Section Dumper V1.00
+        01-29-1996 Sven B. Schreiber sbs@psbs.franken.de
+                 This is Public Domain Software
+________________________________________________________________
+
+
+
+
+PLEASE NOTE
+
+PEexport is Public Domain Software and is distributed with the ASM source code
+included. This software package may be distributed freely on any media
+including bulletin board systems and Internet hosts, provided that all files
+are included and no fee is charged for the software. Although all code and
+documentation belongs to the Public Domain, I strongly recommend that all
+changes be documented properly, including the name of the author, the date, and
+what parts have been changed in which way. Feel free to contact me at
+sbs@psbs.franken.de, 100557.177@compuserve.com, or sbs_msn@msn.com.
+
+DISCLAIMER
+
+This software is provided "as is" and any expressed or implied warranties,
+including, but not limited to, the implied warranties of merchantibility and
+fitness for a particular purpose are disclaimed. In no event shall the author
+Sven B. Schreiber be liable for any direct, indirect, incidental, special,
+exemplary, or consequential damages (including, but not limited to, procurement
+of substitute goods or services; loss of use, data, or profits; or business
+interruption) however caused and on any theory of liability, whether in
+contract, strict liability, or tort (including negligence or otherwise) arising
+in any way out of the use of this software, even if advised of the possibility
+of such damage.
+
+
+
+What is PEexport?
+
+PEexport is a DOS utility to extract exported function names from PE (Portable
+Executable) files used under the Windows NT and Windows 95 operating systems.
+The output is directed to the screen, but can easily be redirected to a disk
+file. PEexport uses both STDOUT and STDERR, so when redirecting the output,
+only the export data will be sent to the disk, while any info and error
+messages will continue to show up on the screen.
+
+The PEexport output conforms to the "Windows Profile" record format (a.k.a. INI
+file format). This facilitates processing of the data by other utilities after
+redirecting it to a disk file. Here’s some sample data, extracted from the
+32-bit WinSock DLL of Windows NT 3.51:
+
+   [WSOCK32.dll]
+   EnumProtocolsA=1110,1111
+   EnumProtocolsW=1111,1112
+   GetAddressByNameA=1108,1109
+   GetAddressByNameW=1109,1110
+   GetNameByTypeA=1114,1115
+   GetNameByTypeW=1115,1116
+   GetServiceA=1118,1119
+   GetServiceW=1119,1120
+   GetTypeByNameA=1112,1113
+   GetTypeByNameW=1113,1114
+   ...
+
+The header (in square brackets) gives the name of the PE file under
+examination, as defined in the export section. It is usally equal to the file
+name you specified on the command line. The lines following the header are
+exported function names, as well as the ordinal numbers corresponding to them.
+The first number is the unbiased ordinal, which is an index into the "Export
+Address Table" of the PE file. The second number is the biased ordinal, i.e. it
+is equal to the former plus the value of the "Ordinal Base" field in the
+"Export Directory Table". Please note that Win32 ordinal numbers are operating
+system dependent, i.e. numbers extracted from Windows NT DLL’s need not match
+those from a Windows 95 DLL of the same name.
+
+If you redirect the PEexport output to disk, the resulting file can be used
+without change as a Win32 import library for the "SBS W32Link" PE file linker.
+Hence, PEexport is the ideal tool to build custom import libraries for W32Link.
+To get a collection of the API’s of the most common Win32 DLLs, you might use
+the following command sequence:
+
+   PEexport KERNEL32.dll >  W32Link.NT
+   PEexport USER32.dll   >> W32Link.NT
+   PEexport GDI32.dll    >> W32Link.NT
+
+This will include three library headers, namely [GDI32.dll], [KERNEL32.dll],
+and [USER32.dll], with the appropriate API entries following them,
+respectively.
+
+Some PE files, most notably some of the Windows NT core DLL’s, don’t export
+their functions in a separate .edata section, as the Microsoft PE/COFF
+specification 4.1 suggests. Instead, they include them in the .text
+(KERNEL32.DLL, ADVAPI32.DLL) or .rdata (USER32.DLL) sections. To find the
+exports anyway, PEexport examines the PE "Optional Header Data Directories"
+at the end of the PE "Optional Header", where the relative virtual address
+(RVA) of the export data is held. Then it loops through the "Section Table" to
+identify the section where the data belongs to. This ensures that PEexport
+always finds the exported function names, where ever they might be buried.
+
+
+
+01-29-1996 Sven B. Schreiber

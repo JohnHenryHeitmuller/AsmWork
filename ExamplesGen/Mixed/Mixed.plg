@@ -1,0 +1,36 @@
+--------------------Configuration: Mixed - Win32 Debug--------------------
+Begining build with project "C:\asmwork\Mixed\Mixed.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /G5 /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Mixed.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x409 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/Mixed.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Mixed.pdb" /debug /machine:I386 /out:"Debug/Mixed.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\TEMP\RSP3251.BAT" with contents <@echo off
+ml /c /coff /Fo.\debug\c.obj c.asm
+>
+Creating command line "C:\TEMP\RSP3251.BAT" 
+Creating temp file "C:\TEMP\RSP3252.TMP" with contents </nologo /G5 /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Mixed.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\asmwork\Mixed\Cmain.c"
+>
+Creating command line "cl.exe @C:\TEMP\RSP3252.TMP" 
+Performing Custom Build Step
+Microsoft (R) Macro Assembler Version 6.13.7299
+Copyright (C) Microsoft Corp 1981-1997.  All rights reserved.
+
+ Assembling: c.asm
+Creating temp file "C:\TEMP\RSP3255.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Mixed.pdb" /debug /machine:I386 /out:"Debug/Mixed.exe" /pdbtype:sept 
+.\Debug\Cmain.obj
+.\debug\c.obj>
+Creating command line "link.exe @C:\TEMP\RSP3255.TMP" 
+Compiling...
+Cmain.c
+Linking...
+
+
+
+Mixed.exe - 0 error(s), 0 warning(s)

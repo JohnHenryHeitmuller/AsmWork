@@ -1,0 +1,143 @@
+#include <windows.h>
+#define IDI_ICON1                       101
+#define IDR_MENU1                       102
+#define IDD_DIALOG1                     103
+#define IDC_EDIT1                       1000
+#define IDD_ABOUTBOX                    2001
+#define IDR_ACCEL                       3000
+#define IDM_TITLE                       4001
+
+#define IDM_NEW                         5001
+#define IDM_OPEN                        5002
+#define IDM_CLOSE                       5003
+#define IDM_SAVE                        5004
+#define IDM_SAVEAS                      5005
+#define IDM_PRINT                       5006
+#define IDM_EXIT                        5007
+
+#define IDM_CUT                         6001
+#define IDM_COPY                        6002
+#define IDM_PASTE                       6003
+
+#define IDM_ABOUT                       7001
+#define IDM_HELP                        7002
+
+#define IDC_STATIC                      -1
+#define IDB_TOOLBAR                     301
+#define ID_TOOLBAR                      302
+
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "toolbar1.bmp"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    IDM_NEW                         "New"
+    IDM_OPEN                        "Open"
+    IDM_CLOSE                       "Close"
+    IDM_SAVE                        "Save"
+    IDM_SAVEAS                      "Save As"
+    IDM_PRINT                       "Print"
+    IDM_EXIT                        "Exit"
+    IDM_CUT                         "Cut"
+    IDM_COPY                        "Copy"
+    IDM_PASTE                       "Paste"
+    IDM_ABOUT                       "About"
+    IDM_NEW+10000                   "Creates a new file"
+    IDM_OPEN+10000                  "Open existing file"
+    IDM_CLOSE+10000                 "Closes a file"
+    IDM_SAVE+10000                  "Saves the file"
+    IDM_SAVEAS+10000                "Saves file with new name"
+    IDM_PRINT+10000                 "Prints the contents"
+    IDM_EXIT+10000                  "Exit program"
+    IDM_CUT+10000                   "Cut item to clipboard"
+    IDM_COPY+10000                  "Copy to clipboard"
+    IDM_PASTE+10000                 "Paste from clipboard"
+    IDM_ABOUT+10000                 "About"
+    IDM_HELP+10000                  "Invoke Help"
+    IDM_TITLE+10000                 "Title dialog"
+END
+
+
+IDB_TOOLBAR TOOLBAR DISCARDABLE  128, 15
+BEGIN
+    BUTTON      ID_TOOLBAR
+END
+
+IDR_MENU1 MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+n",                IDM_NEW
+        MENUITEM "&Open...\tCtrl+o",            IDM_OPEN
+        MENUITEM "&Close\tCtrl+l",              IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save...\tCtrl+s",            IDM_SAVE
+        MENUITEM "Save &As...\tCtrl+a",         IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+p",           IDM_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tF3",                   IDM_EXIT
+    END
+        POPUP "&Edit"
+        BEGIN
+        MENUITEM "Cu&t\tCtrl+x",                IDM_CUT
+        MENUITEM "&Copy\tCtrl+c",               IDM_COPY
+        MENUITEM "&Paste\tCtrl+p",              IDM_PASTE
+        END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Title...",                   IDM_TITLE
+    END
+        POPUP "&Help"
+        BEGIN
+            MENUITEM "&Contents\tF1",               IDM_HELP
+            MENUITEM "&About",                      IDM_ABOUT
+        END
+END
+
+IDR_ACCEL ACCELERATORS
+BEGIN
+    "n",  IDM_NEW, VIRTKEY,CONTROL
+    "o",  IDM_OPEN, VIRTKEY,CONTROL
+    "s",  IDM_SAVE, VIRTKEY,CONTROL
+    "p",  IDM_PRINT, VIRTKEY,CONTROL
+    "x",  IDM_CUT, VIRTKEY,CONTROL
+    "c",  IDM_COPY, VIRTKEY,CONTROL
+    "l",  IDM_CLOSE, VIRTKEY, CONTROL
+    "a",  IDM_SAVEAS, VIRTKEY, CONTROL
+    "v",  IDM_PASTE, VIRTKEY,CONTROL
+    "z",  IDM_EXIT, VIRTKEY, CONTROL
+    VK_F1, IDM_HELP,   VIRTKEY
+    VK_F3, IDM_EXIT,   VIRTKEY
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Title Text"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Enter the text to display in the center of the window",
+                    IDC_STATIC,21,16,91,18
+    LTEXT           "Title:",IDC_STATIC,17,58,19,15
+    EDITTEXT        IDC_EDIT1,36,55,136,16,ES_AUTOHSCROLL
+END
+
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 198, 110
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Test Assembler Program"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,83,50,14
+    LTEXT           "This is a test Win32 program written entirely in assembler (x86) that takes advantage of the new Windows 95 user interface.",
+                    IDC_STATIC,35,15,134,36
+    CTEXT           "Write you're next Windows program in ASSEMBLER",
+                    IDC_STATIC,47,54,105,20,SS_SUNKEN | WS_BORDER
+END
+
+
+

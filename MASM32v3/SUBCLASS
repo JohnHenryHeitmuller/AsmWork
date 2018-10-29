@@ -1,0 +1,40 @@
+; #########################################################################
+
+ListProc proc hCtl   :DWORD,
+              uMsg   :DWORD,
+              wParam :DWORD,
+              lParam :DWORD
+
+; ---------------------------------------------------
+; ListProc PROTO :DWORD,:DWORD,:DWORD,:DWORD
+;
+; Put ' lpfnListProc dd 0 ' in .data section
+; Put ' hList        dd 0 ' in .data section
+;
+; The folowing function call should be placed on the lines
+; following the function call that creates the control
+;
+; invoke SetWindowLong,hList,GWL_WNDPROC,ListProc
+; mov lpfnListProc, eax
+; ---------------------------------------------------
+
+    ; -----------------------------
+    ; Process control messages here
+    ; -----------------------------
+
+    .if uMsg == WM_CHAR
+
+
+    .elseif uMsg == WM_LBUTTONDBLCLK
+
+
+    .endif
+
+    invoke CallWindowProc,lpfnListProc,hCtl,uMsg,wParam,lParam
+
+    ret
+
+ListProc endp
+
+; #########################################################################
+

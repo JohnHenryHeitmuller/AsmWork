@@ -1,0 +1,37 @@
+--------------------Configuration: Winclock - Win32 Debug--------------------
+Begining build with project "C:\asmwork\Winclock\Winclock.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/Winclock.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"Debug/Winclock.res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/Winclock.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /subsystem:windows /incremental:yes /pdb:"Debug/Winclock.pdb" /debug /machine:I386 /def:".\Winclock.def" /out:"Debug/Winclock.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\TEMP\RSP5010.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /subsystem:windows /incremental:yes /pdb:"Debug/Winclock.pdb" /debug /machine:I386 /def:".\Winclock.def" /out:"Debug/Winclock.exe" /pdbtype:sept 
+.\Debug\Winclock.res
+.\debug\winclock.obj
+.\debug\appentry.obj>
+Creating command line "link.exe @C:\TEMP\RSP5010.TMP" 
+Linking...
+Microsoft (R) 32-Bit Incremental Linker Version 5.00.7022
+Copyright (C) Microsoft Corp 1992-1997. All rights reserved.
+
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /subsystem:windows /incremental:yes "/pdb:Debug/Winclock.pdb" /debug /machine:I386 "/def:.\Winclock.def" "/out:Debug/Winclock.exe" /pdbtype:sept 
+.\Debug\Winclock.res 
+.\debug\winclock.obj 
+.\debug\appentry.obj 
+winclock.obj : warning LNK4078: multiple ".data" sections found with different attributes (C0220040)
+.\Winclock.def : warning LNK4017: EXETYPE statement not supported for the target platform; ignored
+.\Winclock.def : warning LNK4017: STUB statement not supported for the target platform; ignored
+Winclock.def : error LNK2001: unresolved external symbol WndProc
+Debug/Winclock.lib : fatal error LNK1120: 1 unresolved externals
+LINK : fatal error LNK1141: failure during build of exports file
+Error executing link.exe.
+
+
+
+Winclock.exe - 3 error(s), 3 warning(s)

@@ -1,0 +1,20 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+HCW=0
+LCID=0x409 0x0 0x0 ;U.S. English
+REPORT=Yes
+TITLE=Coding Win32 Programs in Assembly
+COPYRIGHT=(c) Gary T. Desrosiers, All Rights Reserved
+HLP=.\test2.hlp
+
+[FILES]
+.\test2.rtf
+
+[MAP]
+CodingInAssembly=002
+Overview=001
+Start=0
+
+[WINDOWS]
+main="Coding Win32 Programs in Assembly",(605,66,360,600),20736,(r14876671),(r12632256),f3

@@ -1,0 +1,119 @@
+--------------------Configuration: Win32 - Win32 Debug--------------------
+Begining build with project "c:\ASMWORK\Win32\Win32.dsp", with item "W32demo.asm"
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+
+Creating temp file "C:\TEMP\RSP91C3.BAT" with contents <@echo off
+ml /c /coff /Fo.\debug\w32demo.obj w32demo.asm
+>
+Creating command line "C:\TEMP\RSP91C3.BAT" 
+Performing Custom Build Step
+Microsoft (R) Macro Assembler Version 6.13.7299
+Copyright (C) Microsoft Corp 1981-1997.  All rights reserved.
+
+ Assembling: w32demo.asm
+W32.INC(4245) : error A2008: syntax error : PROCDESC
+W32.INC(4247) : error A2008: syntax error : PROCDESC
+W32.INC(4293) : error A2008: syntax error : PROCDESC
+W32.INC(4294) : error A2008: syntax error : PROCDESC
+W32.INC(4295) : error A2008: syntax error : PROCDESC
+W32.INC(4296) : error A2008: syntax error : PROCDESC
+W32.INC(4297) : error A2008: syntax error : PROCDESC
+W32.INC(4298) : error A2008: syntax error : PROCDESC
+W32.INC(4299) : error A2008: syntax error : GetLastError
+W32.INC(4300) : error A2008: syntax error : DebugBreak
+W32.INC(4301) : error A2008: syntax error : PROCDESC
+W32.INC(4302) : error A2008: syntax error : PROCDESC
+W32.INC(4303) : error A2008: syntax error : PROCDESC
+W32.INC(4304) : error A2008: syntax error : PROCDESC
+W32.INC(4305) : error A2008: syntax error : PROCDESC
+W32.INC(4306) : error A2008: syntax error : PROCDESC
+W32.INC(4307) : error A2008: syntax error : PROCDESC
+W32.INC(4308) : error A2008: syntax error : PROCDESC
+W32.INC(4323) : error A2008: syntax error : PROCDESC
+W32.INC(4326) : error A2008: syntax error : PROCDESC
+W32.INC(4328) : error A2008: syntax error : PROCDESC
+W32.INC(4335) : error A2008: syntax error : PROCDESC
+W32.INC(4337) : error A2008: syntax error : GetCommandLineA
+W32.INC(4339) : error A2008: syntax error : PROCDESC
+W32.INC(4341) : error A2008: syntax error : PROCDESC
+W32.INC(4343) : error A2008: syntax error : PROCDESC
+W32.INC(4347) : error A2008: syntax error : PROCDESC
+W32.INC(4348) : error A2008: syntax error : PROCDESC
+W32.INC(4389) : error A2008: syntax error : PROCDESC
+W32.INC(4391) : error A2008: syntax error : PROCDESC
+W32.INC(4392) : error A2008: syntax error : PROCDESC
+W32.INC(4395) : error A2008: syntax error : PROCDESC
+W32.INC(4396) : error A2008: syntax error : PROCDESC
+W32.INC(4397) : error A2008: syntax error : PROCDESC
+W32.INC(4398) : error A2008: syntax error : PROCDESC
+W32.INC(4399) : error A2008: syntax error : PROCDESC
+W32.INC(4400) : error A2008: syntax error : PROCDESC
+W32.INC(4401) : error A2008: syntax error : PROCDESC
+W32.INC(4402) : error A2008: syntax error : PROCDESC
+W32.INC(4403) : error A2008: syntax error : PROCDESC
+W32.INC(4404) : error A2008: syntax error : PROCDESC
+W32.INC(4406) : error A2008: syntax error : PROCDESC
+W32.INC(4407) : error A2008: syntax error : PROCDESC
+W32.INC(4422) : error A2008: syntax error : PROCDESC
+W32.INC(4424) : error A2008: syntax error : PROCDESC
+W32.INC(4425) : error A2008: syntax error : PROCDESC
+W32.INC(4426) : error A2008: syntax error : PROCDESC
+W32.INC(4427) : error A2008: syntax error : PROCDESC
+W32.INC(4429) : error A2008: syntax error : PROCDESC
+W32.INC(4431) : error A2008: syntax error : PROCDESC
+W32.INC(4432) : error A2008: syntax error : PROCDESC
+W32.INC(4548) : error A2008: syntax error : PROCDESC
+W32.INC(4557) : error A2008: syntax error : PROCDESC
+W32.INC(4559) : error A2008: syntax error : PROCDESC
+W32.INC(4560) : error A2008: syntax error : PROCDESC
+W32.INC(4563) : error A2008: syntax error : PROCDESC
+W32.INC(4569) : error A2008: syntax error : PROCDESC
+W32.INC(4571) : error A2008: syntax error : PROCDESC
+W32.INC(4573) : error A2008: syntax error : PROCDESC
+W32.INC(4575) : error A2008: syntax error : PROCDESC
+W32.INC(4576) : error A2008: syntax error : PROCDESC
+W32.INC(4578) : error A2008: syntax error : PROCDESC
+W32.INC(4580) : error A2008: syntax error : PROCDESC
+W32.INC(4582) : error A2008: syntax error : PROCDESC
+W32.INC(4585) : error A2008: syntax error : PROCDESC
+W32.INC(4586) : error A2008: syntax error : PROCDESC
+W32.INC(4587) : error A2008: syntax error : PROCDESC
+W32.INC(4588) : error A2008: syntax error : PROCDESC
+W32.INC(4589) : error A2008: syntax error : PROCDESC
+W32.INC(4610) : error A2008: syntax error : PROCDESC
+W32.INC(4613) : error A2008: syntax error : PROCDESC
+W32.INC(4615) : error A2008: syntax error : PROCDESC
+W32.INC(4616) : error A2008: syntax error : PROCDESC
+W32.INC(4617) : error A2008: syntax error : PROCDESC
+W32.INC(4619) : error A2008: syntax error : PROCDESC
+W32.INC(4621) : error A2008: syntax error : PROCDESC
+W32.INC(4625) : error A2008: syntax error : PROCDESC
+W32.INC(4626) : error A2008: syntax error : PROCDESC
+W32.INC(4627) : error A2008: syntax error : PROCDESC
+W32.INC(4628) : error A2008: syntax error : PROCDESC
+W32.INC(4629) : error A2008: syntax error : PROCDESC
+W32.INC(4631) : error A2008: syntax error : PROCDESC
+W32.INC(4638) : error A2008: syntax error : PROCDESC
+W32.INC(4639) : error A2008: syntax error : PROCDESC
+W32.INC(4641) : error A2008: syntax error : PROCDESC
+W32.INC(4642) : error A2008: syntax error : PROCDESC
+W32.INC(4643) : error A2008: syntax error : PROCDESC
+W32.INC(4644) : error A2008: syntax error : PROCDESC
+W32.INC(4645) : error A2008: syntax error : PROCDESC
+W32.INC(4646) : error A2008: syntax error : PROCDESC
+W32.INC(4647) : error A2008: syntax error : PROCDESC
+W32.INC(4648) : error A2008: syntax error : PROCDESC
+W32.INC(4649) : error A2008: syntax error : PROCDESC
+W32.INC(4650) : error A2008: syntax error : PROCDESC
+W32.INC(4652) : error A2008: syntax error : PROCDESC
+W32.INC(4653) : error A2008: syntax error : PROCDESC
+W32.INC(4663) : error A2008: syntax error : PROCDESC
+W32.INC(4672) : error A2008: syntax error : PROCDESC
+W32.INC(4673) : error A2008: syntax error : PROCDESC
+W32.INC(4674) : error A2008: syntax error : PROCDESC
+W32.INC(4676) : fatal error A1012: error count exceeds 100; stopping assembly
+
+
+
+w32demo.obj - 101 error(s), 0 warning(s)

@@ -1,0 +1,15 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+HCW=0
+LCID=0x409 0x0 0x0 ;English (United States)
+REPORT=Yes
+CONTENTS=IN
+TITLE=SKELETON Version 2.0
+HLP=.\Skeleton.hlp
+
+[FILES]
+.\HelpFile.rtf
+
+[CONFIG]
+BrowseButtons()

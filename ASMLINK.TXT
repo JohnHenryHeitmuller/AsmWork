@@ -1,0 +1,10 @@
+http://asmjournal.freeservers.com/
+http://catalyst.intur.net/~Iczelion/win32asm/
+http://support.intel.com/support/processors/ia.htm
+http://www.eccentrica.org/Mammon/
+http://webster.ucr.edu/Page_asm/ucrlib_doc/stdlibv2.html
+http://venus.beseen.com/boardroom/l/16009
+http://www.fortunecity.com/skyscraper/lycos/403/
+http://rs1.szif.hu/~tomcat/win32/
+http://www.microsoft.com/win32dev/netwrk/wnetwrk.htm
+http://inti.inf.utfsm.cl/pub/docs/Programming_Languages/assembly/Faqs/x86/a86/faq-doc-7.html

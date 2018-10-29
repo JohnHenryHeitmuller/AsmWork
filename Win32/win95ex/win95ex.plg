@@ -1,0 +1,119 @@
+--------------------Configuration: win95ex - Win32 Debug--------------------
+Begining build with project "c:\ASMWORK\win95ex\win95ex.dsp", with item "Win95ex.asm"
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+
+Creating temp file "C:\TEMP\RSP2132.BAT" with contents <@echo off
+ml /c /coff /Fo.\debug\win95ex.obj win95ex.asm
+>
+Creating command line "C:\TEMP\RSP2132.BAT" 
+Performing Custom Build Step
+Microsoft (R) Macro Assembler Version 6.13.7299
+Copyright (C) Microsoft Corp 1981-1997.  All rights reserved.
+
+ Assembling: win95ex.asm
+w32.inc(33) : error A2006: undefined symbol : UNICODE
+w32.inc(1791) : error A2006: undefined symbol : UNICODE
+w32.inc(1846) : error A2006: undefined symbol : UNICODE
+w32.inc(2290) : error A2006: undefined symbol : UNICODE
+w32.inc(2694) : error A2006: undefined symbol : UNICODE
+w32.inc(2835) : error A2006: undefined symbol : UNICODE
+w32.inc(2883) : error A2006: undefined symbol : UNICODE
+w32.inc(4245) : error A2008: syntax error : PROCDESC
+w32.inc(4247) : error A2008: syntax error : PROCDESC
+w32.inc(4293) : error A2008: syntax error : PROCDESC
+w32.inc(4294) : error A2008: syntax error : PROCDESC
+w32.inc(4295) : error A2008: syntax error : PROCDESC
+w32.inc(4296) : error A2008: syntax error : PROCDESC
+w32.inc(4297) : error A2008: syntax error : PROCDESC
+w32.inc(4298) : error A2008: syntax error : PROCDESC
+w32.inc(4299) : error A2008: syntax error : GetLastError
+w32.inc(4300) : error A2008: syntax error : DebugBreak
+w32.inc(4301) : error A2008: syntax error : PROCDESC
+w32.inc(4302) : error A2008: syntax error : PROCDESC
+w32.inc(4303) : error A2008: syntax error : PROCDESC
+w32.inc(4304) : error A2008: syntax error : PROCDESC
+w32.inc(4305) : error A2008: syntax error : PROCDESC
+w32.inc(4306) : error A2008: syntax error : PROCDESC
+w32.inc(4307) : error A2008: syntax error : PROCDESC
+w32.inc(4308) : error A2008: syntax error : PROCDESC
+w32.inc(4323) : error A2008: syntax error : PROCDESC
+w32.inc(4326) : error A2008: syntax error : PROCDESC
+w32.inc(4328) : error A2008: syntax error : PROCDESC
+w32.inc(4335) : error A2008: syntax error : PROCDESC
+w32.inc(4337) : error A2008: syntax error : GetCommandLineA
+w32.inc(4339) : error A2008: syntax error : PROCDESC
+w32.inc(4341) : error A2008: syntax error : PROCDESC
+w32.inc(4343) : error A2008: syntax error : PROCDESC
+w32.inc(4347) : error A2008: syntax error : PROCDESC
+w32.inc(4348) : error A2008: syntax error : PROCDESC
+w32.inc(4389) : error A2008: syntax error : PROCDESC
+w32.inc(4391) : error A2008: syntax error : PROCDESC
+w32.inc(4392) : error A2008: syntax error : PROCDESC
+w32.inc(4395) : error A2008: syntax error : PROCDESC
+w32.inc(4396) : error A2008: syntax error : PROCDESC
+w32.inc(4397) : error A2008: syntax error : PROCDESC
+w32.inc(4398) : error A2008: syntax error : PROCDESC
+w32.inc(4399) : error A2008: syntax error : PROCDESC
+w32.inc(4400) : error A2008: syntax error : PROCDESC
+w32.inc(4401) : error A2008: syntax error : PROCDESC
+w32.inc(4402) : error A2008: syntax error : PROCDESC
+w32.inc(4403) : error A2008: syntax error : PROCDESC
+w32.inc(4404) : error A2008: syntax error : PROCDESC
+w32.inc(4406) : error A2008: syntax error : PROCDESC
+w32.inc(4407) : error A2008: syntax error : PROCDESC
+w32.inc(4422) : error A2008: syntax error : PROCDESC
+w32.inc(4424) : error A2008: syntax error : PROCDESC
+w32.inc(4425) : error A2008: syntax error : PROCDESC
+w32.inc(4426) : error A2008: syntax error : PROCDESC
+w32.inc(4427) : error A2008: syntax error : PROCDESC
+w32.inc(4429) : error A2008: syntax error : PROCDESC
+w32.inc(4431) : error A2008: syntax error : PROCDESC
+w32.inc(4432) : error A2008: syntax error : PROCDESC
+w32.inc(4548) : error A2008: syntax error : PROCDESC
+w32.inc(4557) : error A2008: syntax error : PROCDESC
+w32.inc(4559) : error A2008: syntax error : PROCDESC
+w32.inc(4560) : error A2008: syntax error : PROCDESC
+w32.inc(4563) : error A2008: syntax error : PROCDESC
+w32.inc(4569) : error A2008: syntax error : PROCDESC
+w32.inc(4571) : error A2008: syntax error : PROCDESC
+w32.inc(4573) : error A2008: syntax error : PROCDESC
+w32.inc(4575) : error A2008: syntax error : PROCDESC
+w32.inc(4576) : error A2008: syntax error : PROCDESC
+w32.inc(4578) : error A2008: syntax error : PROCDESC
+w32.inc(4580) : error A2008: syntax error : PROCDESC
+w32.inc(4582) : error A2008: syntax error : PROCDESC
+w32.inc(4585) : error A2008: syntax error : PROCDESC
+w32.inc(4586) : error A2008: syntax error : PROCDESC
+w32.inc(4587) : error A2008: syntax error : PROCDESC
+w32.inc(4588) : error A2008: syntax error : PROCDESC
+w32.inc(4589) : error A2008: syntax error : PROCDESC
+w32.inc(4610) : error A2008: syntax error : PROCDESC
+w32.inc(4613) : error A2008: syntax error : PROCDESC
+w32.inc(4615) : error A2008: syntax error : PROCDESC
+w32.inc(4616) : error A2008: syntax error : PROCDESC
+w32.inc(4617) : error A2008: syntax error : PROCDESC
+w32.inc(4619) : error A2008: syntax error : PROCDESC
+w32.inc(4621) : error A2008: syntax error : PROCDESC
+w32.inc(4625) : error A2008: syntax error : PROCDESC
+w32.inc(4626) : error A2008: syntax error : PROCDESC
+w32.inc(4627) : error A2008: syntax error : PROCDESC
+w32.inc(4628) : error A2008: syntax error : PROCDESC
+w32.inc(4629) : error A2008: syntax error : PROCDESC
+w32.inc(4631) : error A2008: syntax error : PROCDESC
+w32.inc(4638) : error A2008: syntax error : PROCDESC
+w32.inc(4639) : error A2008: syntax error : PROCDESC
+w32.inc(4641) : error A2008: syntax error : PROCDESC
+w32.inc(4642) : error A2008: syntax error : PROCDESC
+w32.inc(4643) : error A2008: syntax error : PROCDESC
+w32.inc(4644) : error A2008: syntax error : PROCDESC
+w32.inc(4645) : error A2008: syntax error : PROCDESC
+w32.inc(4646) : error A2008: syntax error : PROCDESC
+w32.inc(4647) : error A2008: syntax error : PROCDESC
+w32.inc(4648) : error A2008: syntax error : PROCDESC
+w32.inc(4649) : error A2008: syntax error : PROCDESC
+w32.inc(4650) : fatal error A1012: error count exceeds 100; stopping assembly
+
+
+
+win95ex.obj - 101 error(s), 0 warning(s)
